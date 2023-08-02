@@ -1,0 +1,42 @@
+.topBox {
+  .list {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .listItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .user {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        span {
+          &:first-child {
+            font-weight: bold;
+          }
+        }
+
+        img {
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          object-fit: cover;
+        }
+
+        .userInfo {
+          display: flex;
+          flex-direction: column;
+          font-weight: 200;
+        }
+      }
+      .amount {
+        font-weight: bold;
+      }
+    }
+  }
+}

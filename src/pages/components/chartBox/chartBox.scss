@@ -1,0 +1,43 @@
+.chartBox {
+  display: flex;
+  height: 100%;
+  gap: 24px;
+  justify-content: space-between;
+
+  .boxInfo {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .chartInfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .chart {
+    height: 100%;
+    width: 100%;
+  }
+  .texts {
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    .percentage {
+      font-weight: bold;
+      font-size: 24px;
+    }
+    .duration {
+      font-size: 12px;
+    }
+  }
+}
