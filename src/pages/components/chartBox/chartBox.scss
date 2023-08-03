@@ -1,3 +1,5 @@
+@import "../../../styles/responsive.scss";
+
 .chartBox {
   display: flex;
   height: 100%;
@@ -9,6 +11,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include sm {
+      font-size: 10px;
+    }
   }
 
   .title {
@@ -32,12 +37,19 @@
     align-items: end;
     display: flex;
     flex-direction: column;
+
     .percentage {
       font-weight: bold;
       font-size: 24px;
+      @include sm {
+        font-size: 10px;
+      }
     }
     .duration {
       font-size: 12px;
+      @include sm {
+        font-size: 10px;
+      }
     }
   }
 }

@@ -1,3 +1,4 @@
+@import "../../../styles/responsive.scss";
 .topBox {
   .list {
     margin-top: 12px;
@@ -32,10 +33,22 @@
           display: flex;
           flex-direction: column;
           font-weight: 200;
+          @include xsm {
+            font-size: 8px;
+          }
+          @include sm {
+            font-size: 10px;
+          }
         }
       }
       .amount {
         font-weight: bold;
+        @include xsm {
+          font-size: 10px;
+        }
+        @include sm {
+          font-size: 10px;
+        }
       }
     }
   }
